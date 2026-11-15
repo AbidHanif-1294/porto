@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- ===== SEO ===== -->
+  <title>Abid Web Studio — Websites for Organizations &amp; Small Businesses</title>
+  <meta
+    name="description"
+    content="Abid Web Studio builds clean, responsive, and functional websites for school organizations, extracurriculars, student communities, event committees, and small businesses."
+  />
+  <meta name="author" content="Abid Web Studio" />
+  <meta name="theme-color" content="#0B1B3A" />
+  <link rel="canonical" href="https://your-username.github.io/abid-web-studio/" />
+
+  <!-- ===== Open Graph ===== -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Abid Web Studio" />
+  <meta property="og:title" content="Abid Web Studio — Building Digital Experiences" />
+  <meta
+    property="og:description"
+    content="Clean, responsive, and functional websites for organizations, communities, and small businesses."
+  />
+  <meta property="og:url" content="https://your-username.github.io/abid-web-studio/" />
+  <!-- TODO: replace with a real 1200x630 preview image -->
+  <meta property="og:image" content="https://your-username.github.io/abid-web-studio/assets/og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- ===== Favicon (inline SVG, no extra file needed) ===== -->
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230B1B3A'/%3E%3Cpath d='M20 44 32 20l12 24' stroke='%23fff' stroke-width='5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+  />
+
+  <!-- ===== Fonts ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Enables scroll-reveal styles only when JS is available (no blank page without JS) -->
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============================================================
+       NAVBAR
+  ============================================================ -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a class="brand" href="#home" aria-label="Abid Web Studio — back to top">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+               stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 18 12 6l6 12" />
+          </svg>
+        </span>
+        <span class="brand__text">Abid<em>Web Studio</em></span>
+      </a>
+
+      <nav class="nav" id="primary-nav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#services">Services</a></li>
+          <li><a class="nav__link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav__cta" href="#contact">Let's Talk</a>
+      </nav>
+
+      <button
+        class="nav-toggle"
+        id="navToggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+        aria-label="Open menu"
+      >
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============================================================
+         HERO
+    ============================================================ -->
+    <section class="hero" id="home">
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <p class="eyebrow">Web Development Studio</p>
+          <h1 class="hero__title">
+            Building Digital Experiences for
+            <span class="accent">Organizations</span> and Businesses.
+          </h1>
+          <p class="hero__lead">
+            I help organizations, communities, and small businesses establish their
+            digital presence through clean, responsive, and functional websites.
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#portfolio">
+              Explore My Work
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+            <a class="btn btn--ghost" href="#contact">Let's Work Together</a>
+          </div>
+
+          <ul class="hero__meta">
+            <li>Responsive by default</li>
+            <li>Built with HTML, CSS &amp; JS</li>
+            <li>Student-friendly pricing</li>
+          </ul>
+        </div>
+
+        <!-- Decorative website mockup (pure CSS, no image files) -->
+        <div
+          class="hero__visual reveal"
+          data-delay="1"
+          role="img"
+          aria-label="Illustration of a website interface being built with clean, responsive code"
+        >
+          <div class="mock" aria-hidden="true">
+            <div class="mock__bar">
+              <span class="mock__dot"></span>
+              <span class="mock__dot"></span>
+              <span class="mock__dot"></span>
+              <span class="mock__url">abidwebstudio.dev</span>
+            </div>
+            <div class="mock__screen">
+              <div class="mock__nav">
+                <span class="mock__logo"></span>
+                <span class="mock__links">
+                  <span></span><span></span><span></span>
+                </span>
+              </div>
+              <div class="mock__hero">
+                <span class="mock__line mock__line--xl"></span>
+                <span class="mock__line mock__line--lg"></span>
+                <span class="mock__line mock__line--sm"></span>
+                <div class="mock__btns"><span></span><span></span></div>
+              </div>
+              <div class="mock__cards">
+                <div class="mock__card"></div>
+                <div class="mock__card"></div>
+                <div class="mock__card"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="float float--code" aria-hidden="true">
+            <span class="float__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="m8 6-5 6 5 6M16 6l5 6-5 6" />
+              </svg>
+            </span>
+            <span class="float__text">
+              <strong>Clean Code</strong>
+              <small>HTML · CSS · JS</small>
+            </span>
+          </div>
+
+          <div class="float float--responsive" aria-hidden="true">
+            <span class="float__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <rect x="7" y="2" width="10" height="20" rx="2.5" />
+                <path d="M11 18.5h2" />
+              </svg>
+            </span>
+            <span class="float__text">
+              <strong>Responsive</strong>
+              <small>Mobile first</small>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SERVICES
+    ============================================================ -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Services</p>
+          <h2 class="section__title">Websites built around your goals</h2>
+          <p class="section__desc">
+            Practical, easy-to-maintain websites for organizations and small businesses.
+            Every project is scoped together with you before development starts.
+          </p>
+        </header>
+
+        <div class="services">
+          <!-- Service 1 -->
+          <article class="card service reveal">
+            <span class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="16" rx="2.5" />
+                <path d="M3 9h18M9 20V9" />
+              </svg>
+            </span>
+            <h3 class="service__title">Organization Profile Website</h3>
+            <p class="service__desc">
+              A complete profile website for an organization or extracurricular unit —
+              easy to read and easy to update.
+            </p>
+            <ul class="service__list">
+              <li>Organization info, vision &amp; mission</li>
+              <li>Committee structure &amp; work programs</li>
+              <li>Documentation gallery</li>
+              <li>Contact &amp; social links</li>
+            </ul>
+            <div class="service__price">
+              <span class="price__label">Starting from</span>
+              <span class="price__value">Rp150.000 – Rp250.000</span>
+            </div>
+            <a class="service__link" href="#contact">
+              Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="card service reveal" data-delay="1">
+            <span class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="16" rx="2.5" />
+                <path d="M8 3v4M16 3v4M3 10h18" />
+              </svg>
+            </span>
+            <h3 class="service__title">Event Landing Page</h3>
+            <p class="service__desc">
+              A focused one-page site for your event, committee, or competition —
+              built to inform and convert visitors into participants.
+            </p>
+            <ul class="service__list">
+              <li>Schedule &amp; event description</li>
+              <li>Poster &amp; sponsor section</li>
+              <li>Location &amp; map embed</li>
+              <li>Registration call-to-action</li>
+            </ul>
+            <div class="service__price">
+              <span class="price__label">Starting from</span>
+              <span class="price__value">Rp100.000 – Rp175.000</span>
+            </div>
+            <a class="service__link" href="#contact">
+              Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="card service reveal" data-delay="2">
+            <span class="service__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 4h10v5a5 5 0 0 1-10 0V4Z" />
+                <path d="M7 6H4v1.5A3 3 0 0 0 7 10.5" />
+                <path d="M17 6h3v1.5a3 3 0 0 1-3 3" />
+                <path d="M12 14v3M9 21h6M10 17h4v4h-4z" />
+              </svg>
+            </span>
+            <h3 class="service__title">Portfolio &amp; Achievement Website</h3>
+            <p class="service__desc">
+              A documentation site for activities, projects, and achievements —
+              suitable for organizations, communities, or individuals.
+            </p>
+            <ul class="service__list">
+              <li>Project &amp; activity gallery</li>
+              <li>Achievement timeline</li>
+              <li>Team or member section</li>
+              <li>Lightweight and fast to load</li>
+            </ul>
+            <div class="service__price">
+              <span class="price__label">Starting from</span>
+              <span class="price__value">Rp125.000 – Rp200.000</span>
+            </div>
+            <a class="service__link" href="#contact">
+              Discuss this service
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M5 12h14M13 6l6 6-6 6" />
+              </svg>
+            </a>
+          </article>
+        </div>
+
+        <p class="note reveal">
+          Prices above are early estimates and may change depending on complexity, features,
+          and client requirements. Paid domain and hosting fees are not included unless agreed
+          separately.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         PORTFOLIO
+    ============================================================ -->
+    <section class="section section--alt" id="portfolio">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2 class="section__title">Concept work &amp; demo builds</h2>
+          <p class="section__desc">
+            Everything below is a self-initiated demo or concept design, created to show
+            layout, structure, and code quality. No client work is claimed here.
+          </p>
+        </header>
+
+        <div class="portfolio">
+          <!-- Project 1 -->
+          <article class="card project project--org reveal">
+            <div class="project__thumb">
+              <span class="badge">Demo Project</span>
+              <div class="thumb__page" aria-hidden="true">
+                <span class="thumb__bar"></span>
+                <span class="thumb__hero"></span>
+                <span class="thumb__rows"><span></span><span></span><span></span></span>
+              </div>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">Organization Profile</p>
+              <h3 class="project__title">School Organization Profile</h3>
+              <p class="project__desc">
+                A profile website concept for a student organization: vision and mission,
+                committee structure, work programs, and a documentation gallery.
+              </p>
+              <ul class="tags">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Vanilla JS</li>
+              </ul>
+              <div class="project__actions">
+                <a class="btn btn--sm btn--primary" href="#" data-placeholder-link>Live Preview</a>
+                <a class="btn btn--sm btn--ghost" href="#" data-placeholder-link>View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="card project project--event reveal" data-delay="1">
+            <div class="project__thumb">
+              <span class="badge">Concept Design</span>
+              <div class="thumb__page" aria-hidden="true">
+                <span class="thumb__bar"></span>
+                <span class="thumb__hero"></span>
+                <span class="thumb__rows"><span></span><span></span></span>
+              </div>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">Event Landing Page</p>
+              <h3 class="project__title">Annual Event Landing Page</h3>
+              <p class="project__desc">
+                A single-page concept for a school event: schedule, poster, sponsors,
+                location, and a clear registration call-to-action.
+              </p>
+              <ul class="tags">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Responsive</li>
+              </ul>
+              <div class="project__actions">
+                <a class="btn btn--sm btn--primary" href="#" data-placeholder-link>Live Preview</a>
+                <a class="btn btn--sm btn--ghost" href="#" data-placeholder-link>View Details</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="card project project--achieve reveal" data-delay="2">
+            <div class="project__thumb">
+              <span class="badge">Demo Project</span>
+              <div class="thumb__page" aria-hidden="true">
+                <span class="thumb__bar"></span>
+                <span class="thumb__hero"></span>
+                <span class="thumb__rows"><span></span><span></span><span></span></span>
+              </div>
+            </div>
+            <div class="project__body">
+              <p class="project__cat">Portfolio &amp; Achievement</p>
+              <h3 class="project__title">Student Community Showcase</h3>
+              <p class="project__desc">
+                A documentation site concept for a student community: project gallery,
+                achievement timeline, and member highlights.
+              </p>
+              <ul class="tags">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>Vanilla JS</li>
+              </ul>
+              <div class="project__actions">
+                <a class="btn btn--sm btn--primary" href="#" data-placeholder-link>Live Preview</a>
+                <a class="btn btn--sm btn--ghost" href="#" data-placeholder-link>View Details</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         ABOUT
+    ============================================================ -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__content reveal">
+          <p class="eyebrow">About</p>
+          <h2 class="section__title">Turning Ideas Into Functional Websites.</h2>
+          <p class="about__text">
+            I'm an aspiring web developer interested in building practical digital solutions.
+            I focus on creating websites that are not only visually appealing but also useful,
+            accessible, and easy to navigate.
+          </p>
+          <p class="about__text">
+            I work with core web technologies — no heavy frameworks — so the result stays fast,
+            lightweight, and simple to maintain. Every project starts with a conversation about
+            what you actually need, not what looks trendy.
+          </p>
+
+          <h3 class="about__subtitle">Capabilities</h3>
+          <ul class="skills">
+            <li class="skill">HTML5</li>
+            <li class="skill">CSS3</li>
+            <li class="skill">JavaScript</li>
+            <li class="skill">Responsive Web Design</li>
+            <li class="skill">Basic Python</li>
+            <li class="skill">UI Implementation</li>
+          </ul>
+        </div>
+
+        <aside class="profile-card reveal" data-delay="1">
+          <div class="profile-card__top">
+            <span class="avatar" aria-hidden="true">AW</span>
+            <div>
+              <p class="profile-card__name">Abid</p>
+              <p class="profile-card__role">Web Developer &amp; UI Implementer</p>
+            </div>
+          </div>
+
+          <ul class="profile-card__list">
+            <li><span>Focus</span><span>Responsive websites</span></li>
+            <li><span>Stack</span><span>HTML · CSS · JS</span></li>
+            <li><span>Based in</span><span>Indonesia</span></li>
+            <li>
+              <span>Status</span>
+              <span class="status"><i aria-hidden="true"></i> Open for projects</span>
+            </li>
+          </ul>
+
+          <a class="btn btn--primary btn--block" href="#contact">Start a Project</a>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         WORK PROCESS
+    ============================================================ -->
+    <section class="section section--alt" id="process">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="eyebrow">Work Process</p>
+          <h2 class="section__title">A simple, transparent workflow</h2>
+          <p class="section__desc">
+            Four clear stages — so you always know what's happening and what comes next.
+          </p>
+        </header>
+
+        <ol class="process">
+          <li class="process__item reveal">
+            <span class="process__num">01</span>
+            <h3 class="process__title">Discussion</h3>
+            <p class="process__desc">
+              Understanding your needs, goals, and the audience your website is built for.
+            </p>
+          </li>
+          <li class="process__item reveal" data-delay="1">
+            <span class="process__num">02</span>
+            <h3 class="process__title">Planning</h3>
+            <p class="process__desc">
+              Defining the structure, content, and features before any code is written.
+            </p>
+          </li>
+          <li class="process__item reveal" data-delay="2">
+            <span class="process__num">03</span>
+            <h3 class="process__title">Development</h3>
+            <p class="process__desc">
+              Designing and implementing the website with clean, responsive, semantic code.
+            </p>
+          </li>
+          <li class="process__item reveal" data-delay="3">
+            <span class="process__num">04</span>
+            <h3 class="process__title">Delivery</h3>
+            <p class="process__desc">
+              Testing, revisions as agreed, and handing over the finished website to you.
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         CONTACT
+    ============================================================ -->
+    <section class="section" id="contact">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="eyebrow">Contact</p>
+          <h2 class="section__title">Have a Project in Mind?</h2>
+          <p class="section__desc">
+            Let's discuss how a website can help your organization or business.
+          </p>
+        </header>
+
+        <div class="contact__cards">
+          <!-- TODO: replace the WhatsApp number below with your own -->
+          <a
+            class="contact-card reveal"
+            href="https://wa.me/62XXXXXXXXXX"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 11.5a8.5 8.5 0 0 1-12.3 7.6L3 21l1.9-5.7A8.5 8.5 0 1 1 21 11.5Z" />
+                <path d="M8.5 11h.01M12 11h.01M15.5 11h.01" />
+              </svg>
+            </span>
+            <span class="contact-card__body">
+              <span class="contact-card__label">WhatsApp</span>
+              <span class="contact-card__value">+62 8XX-XXXX-XXXX</span>
+            </span>
+            <span class="contact-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17 17 7M9 7h8v8" />
+              </svg>
+            </span>
+          </a>
+
+          <!-- TODO: replace with your own email address -->
+          <a class="contact-card reveal" data-delay="1" href="mailto:hello@yourdomain.com">
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="5" width="18" height="14" rx="2.5" />
+                <path d="m3.5 7 8.5 6 8.5-6" />
+              </svg>
+            </span>
+            <span class="contact-card__body">
+              <span class="contact-card__label">Email</span>
+              <span class="contact-card__value">hello@yourdomain.com</span>
+            </span>
+            <span class="contact-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17 17 7M9 7h8v8" />
+              </svg>
+            </span>
+          </a>
+
+          <!-- TODO: replace with your GitHub profile URL -->
+          <a
+            class="contact-card reveal"
+            data-delay="2"
+            href="https://github.com/your-username"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="6" cy="6" r="2.4" />
+                <circle cx="6" cy="18" r="2.4" />
+                <circle cx="18" cy="8" r="2.4" />
+                <path d="M6 8.4v7.2M18 10.4c0 3.1-2.6 3.6-5 4.3" />
+              </svg>
+            </span>
+            <span class="contact-card__body">
+              <span class="contact-card__label">GitHub</span>
+              <span class="contact-card__value">@your-username</span>
+            </span>
+            <span class="contact-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17 17 7M9 7h8v8" />
+              </svg>
+            </span>
+          </a>
+
+          <!-- TODO: replace with your Instagram profile URL -->
+          <a
+            class="contact-card reveal"
+            data-delay="3"
+            href="https://instagram.com/your-username"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span class="contact-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="5" />
+                <circle cx="12" cy="12" r="4" />
+                <circle cx="17.2" cy="6.8" r="1" fill="currentColor" stroke="none" />
+              </svg>
+            </span>
+            <span class="contact-card__body">
+              <span class="contact-card__label">Instagram</span>
+              <span class="contact-card__value">@your-username</span>
+            </span>
+            <span class="contact-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                   stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17 17 7M9 7h8v8" />
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <p class="contact__note reveal">
+          Replies are usually within 1–2 business days. Please include a short description of
+          your project and a rough deadline.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__brand">Abid Web Studio</p>
+      <p class="footer__copy">
+        © <span id="year">2025</span> Abid Web Studio. Built with HTML, CSS, and vanilla JavaScript.
+      </p>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+         stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M12 19V5M6 11l6-6 6 6" />
+    </svg>
+  </button>
+
+  <!-- Toast for placeholder links -->
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
